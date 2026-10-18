@@ -1,0 +1,13 @@
+[project]
+name = "hack"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "falkordb>=1.8.0",
+    "langchain-anthropic>=1.7.6",
+    "langgraph>=1.2.16",
+    "mcp>=2.3.0",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.0",
+]

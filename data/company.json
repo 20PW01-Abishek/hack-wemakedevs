@@ -1,0 +1,277 @@
+{
+  "teams": [
+    {
+      "name": "Sales Leadership"
+    },
+    {
+      "name": "North AE"
+    },
+    {
+      "name": "South AE"
+    },
+    {
+      "name": "SDR"
+    },
+    {
+      "name": "RevOps"
+    },
+    {
+      "name": "Finance"
+    }
+  ],
+  "people": [
+    {
+      "id": 1,
+      "name": "Rahul Mehta",
+      "email": "rahul@acme.io",
+      "title": "VP Sales",
+      "team": "Sales Leadership",
+      "manager": null
+    },
+    {
+      "id": 2,
+      "name": "Anita Rao",
+      "email": "anita@acme.io",
+      "title": "Sales Manager North",
+      "team": "North AE",
+      "manager": 1
+    },
+    {
+      "id": 3,
+      "name": "Vikram Singh",
+      "email": "vikram@acme.io",
+      "title": "Sales Manager South",
+      "team": "South AE",
+      "manager": 1
+    },
+    {
+      "id": 4,
+      "name": "Priya Sharma",
+      "email": "priya@acme.io",
+      "title": "Account Executive",
+      "team": "North AE",
+      "manager": 2
+    },
+    {
+      "id": 5,
+      "name": "Arjun Nair",
+      "email": "arjun@acme.io",
+      "title": "Account Executive",
+      "team": "North AE",
+      "manager": 2
+    },
+    {
+      "id": 6,
+      "name": "Meera Iyer",
+      "email": "meera@acme.io",
+      "title": "Account Executive",
+      "team": "South AE",
+      "manager": 3
+    },
+    {
+      "id": 7,
+      "name": "Karthik Raj",
+      "email": "karthik@acme.io",
+      "title": "Account Executive",
+      "team": "South AE",
+      "manager": 3
+    },
+    {
+      "id": 8,
+      "name": "Sneha Patel",
+      "email": "sneha@acme.io",
+      "title": "SDR",
+      "team": "SDR",
+      "manager": 2
+    },
+    {
+      "id": 9,
+      "name": "Divya Menon",
+      "email": "divya@acme.io",
+      "title": "SDR",
+      "team": "SDR",
+      "manager": 3
+    },
+    {
+      "id": 10,
+      "name": "Farhan Ali",
+      "email": "farhan@acme.io",
+      "title": "RevOps Lead",
+      "team": "RevOps",
+      "manager": 1
+    },
+    {
+      "id": 11,
+      "name": "Lakshmi Krishnan",
+      "email": "lakshmi@acme.io",
+      "title": "CFO",
+      "team": "Finance",
+      "manager": null
+    },
+    {
+      "id": 12,
+      "name": "Rohan Das",
+      "email": "rohan@acme.io",
+      "title": "Comp Analyst",
+      "team": "Finance",
+      "manager": 11
+    }
+  ],
+  "rules": [
+    {
+      "name": "AE Accelerator",
+      "value": "1.2x above 100% attainment"
+    },
+    {
+      "name": "AE Base Rate",
+      "value": "8% of ARR"
+    },
+    {
+      "name": "Multi-year Bonus",
+      "value": "+2% for 3-year deals"
+    },
+    {
+      "name": "SDR Meeting Bonus",
+      "value": "INR 1500 per qualified meeting"
+    },
+    {
+      "name": "Clawback Window",
+      "value": "90 days"
+    }
+  ],
+  "plans": [
+    {
+      "id": 101,
+      "name": "AE Plan v3",
+      "members": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "rules": [
+        "AE Accelerator",
+        "AE Base Rate",
+        "Multi-year Bonus",
+        "Clawback Window"
+      ]
+    },
+    {
+      "id": 102,
+      "name": "SDR Plan 2026",
+      "members": [
+        8,
+        9
+      ],
+      "rules": [
+        "SDR Meeting Bonus",
+        "Clawback Window"
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Manager Overlay Plan",
+      "members": [
+        2,
+        3
+      ],
+      "rules": [
+        "AE Accelerator",
+        "Clawback Window"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "id": "D1",
+      "title": "Q3 Comp Review",
+      "url": "https://docs.acme.io/q3-comp-review",
+      "author": 12,
+      "about": [
+        "AE Accelerator",
+        "AE Plan v3"
+      ],
+      "summary": "Impact model for cutting the AE accelerator 1.5x to 1.2x: ~INR 38L/quarter saving, top AEs lose ~12% variable.",
+      "updated": "2026-08-06"
+    },
+    {
+      "id": "D2",
+      "title": "AE Plan v3 Handbook",
+      "url": "https://docs.acme.io/ae-plan-v3",
+      "author": 10,
+      "about": [
+        "AE Plan v3",
+        "AE Base Rate",
+        "AE Accelerator",
+        "Multi-year Bonus"
+      ],
+      "summary": "Full AE plan: 8% base rate, 1.5x accelerator above 100% attainment, multi-year bonus, 90-day clawback.",
+      "updated": "2026-06-01"
+    },
+    {
+      "id": "D3",
+      "title": "SDR Plan 2026",
+      "url": "https://docs.acme.io/sdr-plan-2026",
+      "author": 10,
+      "about": [
+        "SDR Plan 2026",
+        "SDR Meeting Bonus"
+      ],
+      "summary": "SDR plan: per qualified meeting bonus, AE must mark meetings qualified.",
+      "updated": "2026-09-12"
+    },
+    {
+      "id": "D4",
+      "title": "Clawback Policy",
+      "url": "https://docs.acme.io/clawback",
+      "author": 11,
+      "about": [
+        "Clawback Window"
+      ],
+      "summary": "Commission is clawed back if the customer churns within 90 days of signing.",
+      "updated": "2026-06-18"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC1",
+      "summary": "Cut AE accelerator from 1.5x to 1.2x, effective Aug 15 2026",
+      "date": "2026-08-12",
+      "changed": "AE Accelerator",
+      "proposed_by": 10,
+      "approved_by": 1,
+      "doc": "D1",
+      "reason": "Q2 accelerator payouts ran 22% over budget. Impact model: saves ~INR 38L per quarter, top AEs lose ~12% of variable. Managers to brief their teams."
+    },
+    {
+      "id": "DEC2",
+      "summary": "Add +2% bonus for 3-year deals from Q3 2026",
+      "date": "2026-07-08",
+      "changed": "Multi-year Bonus",
+      "proposed_by": 10,
+      "approved_by": 1,
+      "doc": "D2",
+      "reason": "Customers keep asking for 3-year terms; reward AEs for multi-year deals. Paid upfront, 90-day clawback still applies."
+    },
+    {
+      "id": "DEC3",
+      "summary": "Raise SDR meeting bonus to INR 1500, qualified meetings only",
+      "date": "2026-09-12",
+      "changed": "SDR Meeting Bonus",
+      "proposed_by": 10,
+      "approved_by": 11,
+      "doc": "D3",
+      "reason": "Only meetings marked qualified by the AE count; bonus raised to offset excluding no-shows."
+    },
+    {
+      "id": "DEC4",
+      "summary": "Extend clawback window from 60 to 90 days for all plans",
+      "date": "2026-06-18",
+      "changed": "Clawback Window",
+      "proposed_by": 12,
+      "approved_by": 11,
+      "doc": "D4",
+      "reason": "4 churns happened at day 70-80 this half; a 60-day window missed them."
+    }
+  ]
+}
