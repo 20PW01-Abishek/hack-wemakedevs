@@ -2,10 +2,11 @@ import os
 
 from mcp.server.mcpserver import MCPServer
 
-from agent import db, make_tools
+from agent import db, make_tools, private_name
 
-server = MCPServer("compbrain")
-for t in make_tools(db.select_graph(os.getenv("TENANT", "acme"))):
+server = MCPServer("lattice")
+tenant = os.getenv("TENANT", "default")
+for t in make_tools(db.create_graph(tenant), os.getenv("USER_NAME", "guest"), db.create_graph(private_name(tenant))):
     server.add_tool(t.func, name=t.name, description=t.description)
 
 if __name__ == "__main__":

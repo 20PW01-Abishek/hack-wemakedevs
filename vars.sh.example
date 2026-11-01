@@ -1,0 +1,8 @@
+export ANTHROPIC_API_KEY=
+export MODEL=claude-sonnet-5-5
+export NEO4J_URI=bolt://localhost:7687
+export NEO4J_USER=neo4j
+export NEO4J_PASSWORD=password
+export TENANT=default
+export DOCS_DIR=documentation
+export SECRET_KEY=
